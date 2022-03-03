@@ -1,0 +1,17 @@
+body {
+    background-color: #f5f5dc;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color: darkgreen;
+}
+
+input[type=text] {
+    width: 5%;
+    margin: auto;
+    box-sizing: border-box;
+    border: 2px solid green;
+    border-radius: 6px;
+}
