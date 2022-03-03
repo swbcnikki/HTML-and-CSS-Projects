@@ -45,6 +45,16 @@ h1 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
+h1::after {
+    display: block;
+    content: --;
+    height: 2px;
+    width: 150px;
+    background: #E91C1C;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
 h2 {
     line-height: 50px;
     color: #E91C1C;
@@ -104,14 +114,14 @@ section {
 
 .row {
     margin-right: -15px;
-    margin-left: -initial;
+    margin-left: -15px;
 }
 
 .clearfix:after,
-.container::after .navbar:after {
+.container:after .navbar:after {
     clear: both;
     display: table;
-    content: "";
+    content: --;
 }
 
 .wrap {
@@ -130,14 +140,14 @@ section {
 .menu-container {
     max-height: 340px;
     margin: 0% auto;
-    content: "";
+    content: --;
     /*top: 0;
      left 0; */
     /* position absolute; */
     /* to the top edge of the screen */
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 100%;
     /* background-color: rgba(255, 255, 255, 0.5);*/
 }
 
@@ -147,7 +157,7 @@ section {
  ---------------------------------------------*/
 
 #home {
-    background: url(../images/planets.jpg) no-repeat 50% 50%;
+    background: url(../images/thumb/planets.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -330,7 +340,7 @@ CONTACT STYLES
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
-submit input[type="submit"]:hover {
+.submit input[type="submit"]:hover {
     color: #000;
     background-color: #8D8E8F;
     box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
