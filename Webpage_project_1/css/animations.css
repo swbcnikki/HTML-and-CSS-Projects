@@ -98,6 +98,10 @@ PHOTO OVERLAY TRANSITIONS
     cursor: pointer;
 }
 
+.photo-overlay:hover {
+    opacity: 1;
+}
+
 .photo img {
     transition: transform .5s;
     transform-origin: 50% 50%;

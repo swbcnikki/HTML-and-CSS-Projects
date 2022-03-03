@@ -118,7 +118,8 @@ section {
 }
 
 .clearfix:after,
-.container:after .navbar:after {
+.container:after,
+.navbar:after {
     clear: both;
     display: table;
     content: --;
