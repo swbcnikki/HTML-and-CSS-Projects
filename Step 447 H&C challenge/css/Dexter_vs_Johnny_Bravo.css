@@ -1,0 +1,52 @@
+body {
+    background-color: #7bad4c;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    filter: drop-shadow(10px 10px 12px rgb(77, 77, 180));
+    border-radius: 15px 50px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.center {
+    text-align: center;
+    font-family: impact, sans-serif;
+    font-size: xx-large;
+    color: red;
+}
+
+div {
+    padding-top: 50px;
+}
+
+table,
+th,
+td {
+    width: auto;
+    border: 2px solid;
+    padding: 1px;
+}
+
+th {
+    background-color: #d2b48c;
+}
+
+form {
+    font-size: x-large;
+}
+
+footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
