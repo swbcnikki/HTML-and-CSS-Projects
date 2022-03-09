@@ -13,3 +13,6 @@ Projects
 - /bootstrap4_project/academy_cinemas.html .
       This site was created using bootstrap. It includes navbar, columns, 
       images, pill buttons, forms and jumbotron banner.
+- swbcnikki.github.io/Student_Portfolio/Index.html .
+      This site was created using HTML and CSS. I will be adding more features 
+      to this site as I continue through the bootcamp.
