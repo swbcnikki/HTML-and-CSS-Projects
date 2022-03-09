@@ -21,7 +21,7 @@ h1 {
     /* Centering all h1 elements */
     margin-top: 3%;
     /* Adds a small margin above h1 elements */
-    color: #1a1a1a;
+    color: #3d3d3d;
 }
 
 
@@ -34,7 +34,7 @@ h1:hover {
     transform: scale(1.1);
     /* When the h1 elements are hovered over
     they increase in size by 1.1 */
-    transition: transform 1s;
+    transition: transform .1s;
     /* This causes the transformation to
     last 1 second */
 }
@@ -43,7 +43,7 @@ h1:hover {
 /* Styling for portfolio title text */
 
 .white-text {
-    color: #fff;
+    color: rgb(233, 221, 115);
     /* This is used to change the color of the portfolio
     title text */
 }
@@ -57,7 +57,7 @@ p {
     /* Justify text within paragraph elements */
     letter-spacing: 1px;
     /* This expands the text slightly */
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 20px;
     /* Adds padding to the left of the paragraph
     element */
@@ -70,7 +70,7 @@ p {
 /* Paragraph element hover effect */
 
 p:hover {
-    transition: transform 1s;
+    transition: transform .1s;
     /* This makes the transform effect last
     1 second */
     transform: scale(1.01);
@@ -92,7 +92,7 @@ p:hover {
     link, and footer */
 
 .center:hover {
-    transition: transform 2s;
+    transition: transform 1s;
     /* This makes the transform effect last
     2 seconds */
     transform: scale(1.1);
@@ -147,8 +147,8 @@ img:hover {
     filter: grayscale(5%);
     /* Brings back most of the image's
     color when hovered over */
-    transition: transform 1s;
-    /* Transition lasts 1 second */
+    transition: transform .1s;
+    /* Transition lasts .1 second */
     transform: scale(1.1);
     /* Image is increased slightly when
     hovered over */
@@ -176,7 +176,7 @@ footer {
     padding: 2%;
     /* This gives the footer padding that is equal to 2%
     of the width of the element's area */
-    background-color: white;
+    background-color: rgb(233, 221, 115);
 }
 
 
@@ -189,8 +189,8 @@ footer {
     overflow: hidden;
     /* This ensures that any content that overflows
     beyond the boundary of our nav bar is not displayed */
-    background-color: black;
-    /* This colors the navbar black */
+    background-color: rgb(75, 29, 88);
+    /* This colors the navbar purple */
     position: fixed;
     /* This keeps the navbar at the top of the screen
     as we scroll */
@@ -202,10 +202,10 @@ footer {
     z-index: 1;
     /* This ensures other elements don't display over the
     navbar */
-    -webkit-animation: moveNav 5s;
+    -webkit-animation: moveNav 3s;
     /* This applies the moveNav
     animation below for Safari 4.0 - 8.0 */
-    animation: moveNav 5s;
+    animation: moveNav 3s;
     /* This applies the moveNav animation for
     all other browsers */
 }
@@ -256,12 +256,12 @@ footer {
     position: relative;
     /* This sets the text relative to its normal
     positioning, allowing us to use the animation below */
-    -webkit-animation: moveNavText 5.75s;
+    -webkit-animation: moveNavText 3s;
     /* Animation for Safari 4.0
     - 8.0 */
-    animation: moveNavText 5.75s;
+    animation: moveNavText 3s;
     /* Applies the moveNavText animation
-    for 5.75s */
+    for 3s */
 }
 
 
@@ -326,7 +326,7 @@ footer {
 
 /* Formatting for background video */
 
-#Typing_Video {
+#backgroundvideo {
     position: fixed;
     /* This fixes the video to the page */
     right: 0;
@@ -348,7 +348,7 @@ footer {
     video */
 
 @media screen and (max-width: 576px) {
-    #Typing_Video {
+    #backgroundvideo {
         display: none;
     }
 }
@@ -487,7 +487,7 @@ input[type=text] {
     container */
     padding: 12px;
     /* Adds padding within the text box */
-    border: 1px solid #ccc;
+    border: 1px solid rgb(184, 154, 192);
     /* Setting a solid border and its color */
     border-radius: 4px;
     /* Slightly rounds the corners of the text box
@@ -519,9 +519,9 @@ input[type=text]:hover {
 /* Submit button */
 
 input[type=submit] {
-    background-color: black;
+    background-color: rgb(75, 29, 88);
     /* Sets the background color of the
-    submit button to black */
+    submit button to purple */
     color: white;
     /* Sets the font color of the Submit button to white
     */
@@ -558,9 +558,9 @@ input[type=submit]:hover {
     transform: scale(1.5);
     /* Makes the button increase 1.5 times in
     size */
-    transition: transform 1.5s;
-    /* Makes the transform effect last 1.5
-    seconds */
+    transition: transform 1s;
+    /* Makes the transform effect last 1
+    second */
 }
 
 
