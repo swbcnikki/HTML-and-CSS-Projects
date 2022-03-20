@@ -4,8 +4,9 @@
 
 <head>
     <title>A Case for Community Gardens</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/one_page_website.css">
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 
 <body>
@@ -48,8 +49,8 @@
         <div>
             <h3>Why would anyone want to do this?</h3>
             <p>
-                Many people in our communities do not have access to food, especially fresh produce. Due to<br> high cost, or being located in a food desert, access is not always readily available. By starting,<br> or being a part of, a community garden
-                you provide opportunities for education, nutrition, therapy,<br> relationship building, skill development and bridging gaps between those in the community.<br>
+                Many people in our communities do not have equal access to food, especially fresh produce. Due to<br> high cost, or being located in a food desert, access is not always readily available. By starting,<br> or being a part of, a community
+                garden you provide opportunities for education, nutrition, therapy,<br> relationship building, skill development and bridging gaps between those in the community.<br>
             </p>
             <a href="https://environmentalevidencejournal.biomedcentral.com/articles/10.1186/2047-2382-3-20#:~:text=A%20community%20garden%20is%20defined,hospital%2C%20or%20in%20a%20neighborhood." target="new">The Environmental Evidence Journal</a> did
             a study on the impact of community gardens.<br>
@@ -75,8 +76,8 @@
 
                 <!-- PHOTO-CONTAINER 1 -->
                 <div>
-                    <div>
-                        <img src="./one page website images/one page thumbs/garden_1.jpg" alt="Overhead picture of gardener working">
+                    <div class="column">
+                        <img src="./one page website images/one page thumbs/garden_1.jpg" style="width: 100%" onclick="openModal (); currentSlide(1)" class="hover-shadow cursor">
                         <div>
                             <h3>Click to enlarge</h3>
                             <p><em>Get involved today!</em></p>
@@ -87,8 +88,8 @@
 
                 <!-- PHOTO-CONTAINER 2 -->
                 <div>
-                    <div>
-                        <img src="./one page website images/one page thumbs/garden_2.jpg" alt="Grandfather and grandson bonding">
+                    <div class="column">
+                        <img src="./one page website images/one page thumbs/garden_2.jpg" style="width: 100%" onclick="openModal (); currentSlide(2)" class="hover-shadow cursor">
                         <div>
                             <h3>Click to enlarge</h3>
                             <p><em>Get involved today!</em></p>
@@ -99,8 +100,8 @@
 
                 <!-- PHOTO-CONTAINER 3 -->
                 <div>
-                    <div>
-                        <img src="./one page website images/one page thumbs/garden_3.jpg" alt="Working in a greenhouse">
+                    <div class="column">
+                        <img src="./one page website images/one page thumbs/garden_3.jpg" style="width: 100%" onclick="openModal (); currentSlide(3)" class="hover-shadow cursor">
                         <div>
                             <h3>Click to enlarge</h3>
                             <p><em>Get involved today!</em></p>
@@ -111,8 +112,8 @@
 
                 <!-- PHOTO-CONTAINER 4 -->
                 <div>
-                    <div>
-                        <img src="./one page website images/one page thumbs/garden_4.jpg" alt="Rooftop garden">
+                    <div class="column">
+                        <img src="./one page website images/one page thumbs/garden_4.jpg" style="width: 100%" onclick="openModal (); currentSlide(4)" class="hover-shadow cursor">
                         <div>
                             <h3>Click to enlarge</h3>
                             <p><em>Get involved today!</em></p>
@@ -123,8 +124,8 @@
 
                 <!-- PHOTO-CONTAINER 5 -->
                 <div>
-                    <div>
-                        <img src="./one page website images/one page thumbs/garden_5.jpg" alt="Neighborhood urban garden">
+                    <div class="column">
+                        <img src="./one page website images/one page thumbs/garden_5.jpg" style="width: 100%" onclick="openModal (); currentSlide(5)" class="hover-shadow cursor">
                         <div>
                             <h3>Click to enlarge</h3>
                             <p><em>Get involved today!</em></p>
@@ -135,19 +136,72 @@
 
                 <!-- PHOTO-CONTAINER 6 -->
                 <div>
-                    <div>
-                        <img src="./one page website images/one page thumbs/garden_6.jpg" alt="Pollinator garden">
+                    <div class="column">
+                        <img src="./one page website images/one page thumbs/garden_6.jpg" style="width: 100%" onclick="openModal (); currentSlide(6)" class="hover-shadow cursor">
                         <div>
                             <h3>Click to enlarge</h3>
                             <p><em>Get involved today!</em></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- END PHOTO-CONTAINER 6 -->
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="./One page website Images/One page thumbs/garden_1.jpg" style="width: 100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="./One page website Images/One page thumbs/garden_2.jpg" style="width: 100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="./One page website Images/One page thumbs/garden_3.jpg" style="width: 100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="./One page website Images/One page thumbs/garden_4.jpg" style="width: 100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="./One page website Images/One page thumbs/garden_5.jpg" style="width: 100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="./One page website Images/One page thumbs/garden_6.jpg" style="width: 100%">
+                        </div>
+                        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095</a>
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./One page website Images/One page thumbs/garden_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Overhead picture of gardener working"></div>
+                        <div class="column">
+                            <img class="demo cursor" src="./One page website Images/One page thumbs/garden_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Grandfather and grandson bonding"></div>
+                        <div class="column">
+                            <img class="demo cursor" src="./One page website Images/One page thumbs/garden_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Working in a greenhouse"></div>
+                        <div class="column">
+                            <img class="demo cursor" src="./One page website Images/One page thumbs/garden_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Rooftop garden"></div>
+                        <div class="column">
+                            <img class="demo cursor" src="./One page website Images/One page thumbs/garden_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Neighborhood urban garden"></div>
+                        <div class="column">
+                            <img class="demo cursor" src="./One page website Images/One page thumbs/garden_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Pollinator garden"></div>
+                    </div>
+                </div>
+
+                <!-- End Modal-->
 
             </div>
         </div>
     </section>
+
     <!-- END GALLERY -->
 
     <!-- SEARCH -->
